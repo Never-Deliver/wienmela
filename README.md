@@ -6,3 +6,7 @@
 
 - Angular 8
 
+## Work history:
+### 05-Apr
+ * Created angular project as per https://github.com/angular/angularfire/blob/master/docs/install-and-setup.md
+ * 

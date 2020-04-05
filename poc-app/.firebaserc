@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "never-deliver": {
+      "hosting": {
+        "poc-app": [
+          "never-deliver"
+        ]
+      }
+    }
+  }
+}
