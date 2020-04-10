@@ -6,6 +6,8 @@ import { environment } from '../environments/environment';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth'
 import { AngularFireModule } from 'angularfire2';
+import { LayoutModule } from '../app/modules/layout-module/layout-module';
+
 
 @NgModule({
   declarations: [
@@ -13,6 +15,7 @@ import { AngularFireModule } from 'angularfire2';
   ],
   imports: [
     BrowserModule,
+    LayoutModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase, 'letslearn-dev'),
     AngularFireDatabaseModule,

@@ -1,0 +1,13 @@
+
+@mixin backgroundImage($imgpath,$position:0 0,$repeat: no-repeat) 
+    background: 
+        image: url($imgpath)
+        position: $position
+        repeat: $repeat
+    
+
+.app-logo
+   @include backgroundImage('/assets/icons/wien-logo.jpg')
+   display:inline
+   height:58px
+   width:58px
