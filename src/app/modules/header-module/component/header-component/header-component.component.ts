@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HeaderFacadeService } from '../../facade/header-facade.service';
+import { HeaderStateService } from '../../state/header-state.service';
 
 @Component({
   selector: 'app-header-component',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private headerFacade:HeaderFacadeService,
+             public headerState:HeaderStateService){
+
+              }
 
   ngOnInit(): void {
+     this.headerFacade.bindTabs();
   }
 
 }

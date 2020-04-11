@@ -4,14 +4,18 @@ import { HeaderComponent } from '../header-module/component/header-component/hea
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from 'src/app/app-routing.module';
+import { HeaderStateService } from '../header-module/state/header-state.service';
+import { HeaderFacadeService } from '../header-module/facade/header-facade.service';
+import { TabsComponent } from '../header-module/component/tabs-component/tabs-component.component';
 
 @NgModule({
-  declarations: [HeaderComponent],
+  declarations: [HeaderComponent,TabsComponent],
   imports: [
       CommonModule,
       AppRoutingModule,
     ],
-  exports:[HeaderComponent],
-  bootstrap:[]
+  exports:[HeaderComponent,TabsComponent],
+  bootstrap:[],
+  providers:[HeaderFacadeService,HeaderStateService]
 })
 export class HeaderModule { }

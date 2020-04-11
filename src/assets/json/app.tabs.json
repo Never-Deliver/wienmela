@@ -1,0 +1,76 @@
+[
+    {
+        "displayName": "Home",
+        "url":"/",
+        "children": [
+            {
+                "displayName": "Restaurants",
+                "url":"/restaurants",
+                "children": [
+                    {
+                        "displayName": "Restaurants1",
+                        "url":"/restaurants1",
+                        "children": [
+                            {
+                                "displayName": "Restaurants11",
+                                "url":"/restaurants11",
+                                "children": [
+                                    {
+                                        "displayName": "Restaurants11-1",
+                                        "url":"/restaurants11-1",
+                                        "children": [
+                                            {
+                                                "displayName": "Restaurants11-1-1",
+                                                "url":"/restaurants11-1-1"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "displayName": "Restaurants11-2",
+                                        "url":"/restaurants11-2"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "displayName": "Restaurants2",
+                        "url":"/restaurants2"
+                    }
+                ]
+            },
+            {
+                "displayName": "Transport",
+                "url":"/transport"
+            },
+            {
+                "displayName": "Temple",
+                "url":"/temple"
+            },
+            {
+                "displayName": "Doctor",
+                "url":"/doctor"
+            }
+        ]
+    },
+    {
+        "displayName": "Rules/Info",
+        "url":"/rulesinfo"
+    },
+    {
+        "displayName": "Wien Club",
+        "url":"/wienclub"
+    },
+    {
+        "displayName": "Bulletin Board",
+        "url":"/bulletinboard"
+    },
+    {
+        "displayName": "Login",
+        "url":"/login"
+    },
+    {
+        "displayName": "Register",
+        "url":"/register"
+    }
+]

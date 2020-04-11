@@ -1,1 +1,7 @@
-<p>Tabs component</p>
+<ul class="dropdown-menu dropdown_submenu" *ngIf="items">
+    <li *ngFor="let subTab of items">
+        <a class="dropdown-item" href="#" *ngIf="(!subTab?.children)">{{subTab.displayName}}</a>
+        <a class="dropdown-item  dropdown-toggle" href="#" *ngIf="(subTab?.children && subTab?.children?.length > 0)">{{subTab.displayName}}</a>
+        <app-tabs-component class="tabcls" *ngIf="(subTab?.children)" [navItems]="subTab?.children"></app-tabs-component>
+    </li>
+</ul>

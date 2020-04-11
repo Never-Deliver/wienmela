@@ -8,9 +8,28 @@
 
 .app-logo
    @include backgroundImage('/assets/icons/wien-logo.jpg')
-   display:inline-block
+   display: inline-block
    height:58px
    width:58px
 
 .bg-dark
   background-color:#0072C6 !important   
+
+.navAnchor
+  color: white !important
+  font-weight: 400 !important
+
+::ng-deep .ulNav li.dropdown > .tabcls > ul.dropdown-menu
+    top: 28px
+    left: 22px
+
+::ng-deep .dropdown-menu > li > a:hover:after
+   transform: rotate(-90deg)
+
+::ng-deep .ulNav li:hover > .tabcls > ul.dropdown-menu
+   display: block
+
+::ng-deep .dropdown_submenu 
+    top: 0
+    left: 100%
+    position: absolute
