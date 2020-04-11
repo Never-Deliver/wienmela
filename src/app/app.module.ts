@@ -6,20 +6,29 @@ import { environment } from '../environments/environment';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth'
 import { AngularFireModule } from 'angularfire2';
-import { LayoutModule } from '../app/modules/layout-module/layout-module';
-
+import { HeaderModule } from './modules/header-module/header.module';
+import { FooterModule } from './modules/footer-module/footer.module';
+import { RouterModule } from '@angular/router';
+import { PageNotComponent } from './app.pagenot-found';
+import { AppLayOutComponent } from './modules/layout-module/component/app-layout/app-layout.component';
+import { HomeComponent } from './modules/home-module/component/home-component/home.component';
+import { HeaderComponent } from './modules/header-module/component/header-component/header-component.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  
   imports: [
     BrowserModule,
-    LayoutModule,
-    AppRoutingModule,
+    HeaderModule,
+    FooterModule,
+    RouterModule,
     AngularFireModule.initializeApp(environment.firebase, 'letslearn-dev'),
     AngularFireDatabaseModule,
     AngularFireAuthModule
+  ],
+  declarations: [
+    AppComponent,
+    AppLayOutComponent,
+    PageNotComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
